@@ -7,7 +7,9 @@
                 "types/*",
                 "bin"
             ],
-            "dist/*": ["../../dist/*"]
+            "dist/*": [
+                "../../dist/*"
+            ]
         },
         "importHelpers": true,
         "sourceMap": false,
@@ -16,8 +18,14 @@
         "noImplicitAny": false,
         "module": "commonjs",
         "target": "ES3",
-        "types": ["node"],
-        "lib": ["es5", "es6", "dom"],
+        "types": [
+            "node"
+        ],
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
         "moduleResolution": "node",
         "forceConsistentCasingInFileNames": true,
         "noImplicitReturns": true,
@@ -36,17 +44,6 @@
         "./src/**/*",
         "./test/**/*"
     ],
-    "exclude": [
-        "./dist/**/*",
-        "./bin/dist/**/*"
-    ],
-    "awesomeTypescriptLoaderOptions": {
-        "reportFiles": [
-            "./src/**/*",
-            "./bin/**/*",
-            "./test/**/*",
-        ]
-    },
     "typeRoots": [
         "./node_modules/@types"
     ]
