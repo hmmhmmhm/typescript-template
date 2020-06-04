@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/index.ts",
+    "start": "tsc && node dist/index.js",
     "clean": "rm -rf ./dist/*.*",
     "lint": "prettier --write ./src/**/*.{ts,js}"
   },
@@ -16,7 +16,6 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^13.13.9",
-    "prettier": "^2.0.5",
-    "ts-node": "^8.10.2"
+    "prettier": "^2.0.5"
   }
 }
