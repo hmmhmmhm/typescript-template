@@ -2,16 +2,7 @@
     "compilerOptions": {
         "outDir": "./dist",
         "baseUrl": ".",
-        "paths": {
-            "*": [
-                "types/*",
-                "bin"
-            ],
-            "dist/*": [
-                "../../dist/*"
-            ]
-        },
-        "importHelpers": true,
+        "importHelpers": false,
         "sourceMap": false,
         "declaration": true,
         "inlineSourceMap": false,
@@ -39,11 +30,6 @@
         "experimentalDecorators": true,
         "skipLibCheck": true
     },
-    "include": [
-        "./bin/**/*",
-        "./src/**/*",
-        "./test/**/*"
-    ],
     "typeRoots": [
         "./node_modules/@types"
     ]
